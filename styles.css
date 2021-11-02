@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 45px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  padding: 0px;
+  padding-right: 30px;
+}
+
+#nology {
+  display: inline-block;
+  width: 150px;
+  height: 45px;
+  background-color: #800080;
+  text-align: center;
+  padding: 12px;
+}
+
+nav > #linkgroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.linkgroup3 {
+  width: 600px;
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+
+a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+
+main > .tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 3fr 2fr;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+  
+}
+
+main > .tabs > h3 {
+  background-color: #800080;
+  color: white;
+  padding: 20px;
+}
+
+
+main > .tabs > #image {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid black;
+  justify-self: center;
+}
+
+main > .tabs > #about-me {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+main > .tabs > #hobbies {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+main > .tabs > #contact {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+main > .tabs > #employment {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+main > .tabs > #education {
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+
+
+
+
+@media screen and (max-width: 550px){
+
+  nav {
+    display: none;
+  }
+
+  main > .tabs > .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main > .tabs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 2fr 1fr;
+    gap: 10px;
+    width: 100%;
+    }
+  
+  main > .tabs > h3 {
+    background-color: #800080;
+    color: white;
+  }
+
+  main > .tabs > #image  {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: inline-block;
+    width: 50%;
+    border-radius: 50%;
+    min-width: 200px;
+    max-width: 200px;
+    
+  }
+  
+  main > .tabs > #about-me {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  
+  main > .tabs > #hobbies {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  
+  main > .tabs > #contact {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  
+  main > .tabs > #employment {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  
+  main > .tabs > #education {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+ }
+
+
